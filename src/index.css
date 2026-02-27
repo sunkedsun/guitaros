@@ -1,38 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 30 15% 96%;
-    --foreground: 0 0% 7%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
 
-    --card: 30 15% 98%;
-    --card-foreground: 0 0% 7%;
+    --card: 214 100% 96%;
+    --card-foreground: 0 0% 13%;
 
-    --popover: 30 15% 98%;
-    --popover-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
 
-    --primary: 40 72% 55%;
-    --primary-foreground: 0 0% 7%;
+    --primary: 224 100% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 10% 91%;
-    --secondary-foreground: 0 0% 7%;
+    --secondary: 214 100% 96%;
+    --secondary-foreground: 0 0% 13%;
 
-    --muted: 30 10% 91%;
+    --muted: 214 20% 94%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 40 72% 55%;
-    --accent-foreground: 0 0% 7%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 13%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 10% 88%;
-    --input: 30 10% 88%;
-    --ring: 40 72% 55%;
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 224 100% 39%;
 
     --radius: 0.75rem;
 
@@ -45,34 +43,34 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --font-display: 'DM Serif Display', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --surface-warm: 214 100% 96%;
+    --surface-dark: 0 0% 13%;
+    --surface-dark-foreground: 0 0% 100%;
 
-    --surface-warm: 30 20% 94%;
-    --surface-dark: 0 0% 7%;
-    --surface-dark-foreground: 30 15% 96%;
+    --success: 110 44% 34%;
+    --success-foreground: 0 0% 100%;
   }
 
   .dark {
     --background: 0 0% 7%;
-    --foreground: 30 15% 96%;
+    --foreground: 0 0% 96%;
     --card: 0 0% 10%;
-    --card-foreground: 30 15% 96%;
+    --card-foreground: 0 0% 96%;
     --popover: 0 0% 10%;
-    --popover-foreground: 30 15% 96%;
-    --primary: 40 72% 55%;
-    --primary-foreground: 0 0% 7%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 224 100% 50%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 14%;
-    --secondary-foreground: 30 15% 96%;
+    --secondary-foreground: 0 0% 96%;
     --muted: 0 0% 14%;
-    --muted-foreground: 30 10% 60%;
-    --accent: 0 0% 14%;
-    --accent-foreground: 30 15% 96%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 7%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 40 72% 55%;
+    --ring: 224 100% 50%;
   }
 }
 
@@ -83,11 +81,14 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-body);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-display);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 

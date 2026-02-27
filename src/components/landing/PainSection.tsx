@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 const pains = [
   "You sit down to practice and spend 20 minutes just figuring out what to practice",
   "You've been playing for months (or years) but still hesitate on basic chord changes",
@@ -8,21 +10,25 @@ const pains = [
 ];
 
 const PainSection = () => (
-  <section className="py-24 md:py-32">
-    <div className="container max-w-4xl mx-auto px-6">
-      <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">Sound familiar?</p>
-      <h2 className="font-display text-3xl md:text-5xl mb-4">
-        "I practice every day.<br />Why am I still stuck?"
-      </h2>
-      <p className="text-muted-foreground text-lg mb-12 max-w-2xl">
-        You're putting in time—but you still hesitate on certain chords, avoid weak spots, and aren't sure if you're actually improving.
-      </p>
-      <div className="grid gap-4">
+  <section className="py-28 md:py-36">
+    <div className="container max-w-3xl mx-auto px-6">
+      <ScrollReveal>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">Sound familiar?</p>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-4">
+          "I practice every day.<br />Why am I still stuck?"
+        </h2>
+        <p className="text-muted-foreground text-lg mb-14 max-w-2xl leading-relaxed">
+          You're putting in time—but you still hesitate on certain chords, avoid weak spots, and aren't sure if you're actually improving.
+        </p>
+      </ScrollReveal>
+      <div className="grid gap-3">
         {pains.map((pain, i) => (
-          <div key={i} className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border/60">
-            <span className="text-primary font-bold mt-0.5">✕</span>
-            <p className="text-foreground/80 font-body">{pain}</p>
-          </div>
+          <ScrollReveal key={i} delay={i * 0.05}>
+            <div className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border/40">
+              <span className="text-accent font-semibold mt-0.5 shrink-0">✕</span>
+              <p className="text-foreground/80">{pain}</p>
+            </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>

@@ -5,6 +5,7 @@ import DreamOutcome from "@/components/landing/DreamOutcome";
 import IntroduceSection from "@/components/landing/IntroduceSection";
 import WhyItWorks from "@/components/landing/WhyItWorks";
 import WhatYouGet from "@/components/landing/WhatYouGet";
+import WhoIsFor from "@/components/landing/WhoIsFor";
 import Timeline from "@/components/landing/Timeline";
 import ValueSection from "@/components/landing/ValueSection";
 import PricingSection from "@/components/landing/PricingSection";
@@ -21,6 +22,7 @@ const Index = () => (
     <IntroduceSection />
     <WhyItWorks />
     <WhatYouGet />
+    <WhoIsFor />
     <Timeline />
     <ValueSection />
     <PricingSection />

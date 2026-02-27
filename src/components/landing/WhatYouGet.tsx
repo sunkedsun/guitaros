@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 const modules = [
   {
     num: "01",
@@ -32,18 +34,22 @@ const modules = [
 ];
 
 const WhatYouGet = () => (
-  <section className="py-24 md:py-32">
-    <div className="container max-w-4xl mx-auto px-6">
-      <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">What's inside</p>
-      <h2 className="font-display text-3xl md:text-5xl mb-4">One PDF. Everything laid out.</h2>
-      <p className="text-muted-foreground text-lg mb-16">No fluff, no filler—just the roadmap.</p>
-      <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
-        {modules.map((m) => (
-          <div key={m.num}>
-            <span className="text-primary font-bold text-sm tracking-wider">{m.num}</span>
-            <h3 className="font-display text-xl mt-2 mb-3">{m.title}</h3>
-            <p className="text-muted-foreground font-body leading-relaxed">{m.desc}</p>
-          </div>
+  <section className="py-28 md:py-36">
+    <div className="container max-w-3xl mx-auto px-6">
+      <ScrollReveal>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">What's inside</p>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-4">One PDF. Everything laid out.</h2>
+        <p className="text-muted-foreground text-lg mb-16 leading-relaxed">No fluff, no filler—just the roadmap.</p>
+      </ScrollReveal>
+      <div className="grid md:grid-cols-2 gap-x-14 gap-y-12">
+        {modules.map((m, i) => (
+          <ScrollReveal key={m.num} delay={i * 0.06}>
+            <div>
+              <span className="text-primary font-semibold text-xs tracking-[0.15em]">{m.num}</span>
+              <h3 className="text-xl font-semibold tracking-tight mt-2 mb-3">{m.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{m.desc}</p>
+            </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>

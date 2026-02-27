@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 const outcomes = [
   { time: "1 week", result: "Play your first full song" },
   { time: "3 days", result: "Nail a tricky chord transition" },
@@ -7,23 +9,29 @@ const outcomes = [
 ];
 
 const DreamOutcome = () => (
-  <section className="py-24 md:py-32 bg-surface-warm rounded-3xl mx-4 md:mx-8">
-    <div className="container max-w-4xl mx-auto px-6">
-      <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">The transformation</p>
-      <h2 className="font-display text-3xl md:text-5xl mb-12">
-        Imagine what it would feel like to…
-      </h2>
-      <div className="grid gap-6">
+  <section className="py-28 md:py-36 bg-surface-warm">
+    <div className="container max-w-3xl mx-auto px-6">
+      <ScrollReveal>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">The transformation</p>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-14">
+          Imagine what it would feel like to…
+        </h2>
+      </ScrollReveal>
+      <div className="grid gap-8">
         {outcomes.map((o, i) => (
-          <div key={i} className="flex items-baseline gap-6">
-            <span className="text-primary font-bold text-sm tracking-wider uppercase whitespace-nowrap min-w-[100px]">{o.time}</span>
-            <p className="text-lg md:text-xl font-display">{o.result}</p>
-          </div>
+          <ScrollReveal key={i} delay={i * 0.06}>
+            <div className="flex items-baseline gap-6">
+              <span className="text-primary font-semibold text-xs tracking-[0.15em] uppercase whitespace-nowrap min-w-[100px]">{o.time}</span>
+              <p className="text-xl md:text-2xl font-semibold tracking-tight">{o.result}</p>
+            </div>
+          </ScrollReveal>
         ))}
       </div>
-      <p className="text-muted-foreground mt-12 text-lg max-w-2xl">
-        Feel confident and proud every time you pick up your guitar. Guitar OS gives you the structure, clarity, and daily wins that turn frustration into mastery.
-      </p>
+      <ScrollReveal delay={0.3}>
+        <p className="text-muted-foreground mt-16 text-lg max-w-2xl leading-relaxed">
+          Feel confident and proud every time you pick up your guitar. Guitar OS gives you the structure, clarity, and daily wins that turn frustration into mastery.
+        </p>
+      </ScrollReveal>
     </div>
   </section>
 );

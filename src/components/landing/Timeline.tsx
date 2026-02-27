@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 const milestones = [
   { time: "Day 3", result: "Chord transitions start to click. The hesitation shrinks." },
   { time: "Week 1", result: "You play your first full song all the way through." },
@@ -8,21 +10,25 @@ const milestones = [
 ];
 
 const Timeline = () => (
-  <section className="py-24 md:py-32 bg-surface-warm rounded-3xl mx-4 md:mx-8">
-    <div className="container max-w-4xl mx-auto px-6">
-      <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">What to expect</p>
-      <h2 className="font-display text-3xl md:text-5xl mb-16">Time, Effort & Early Wins</h2>
+  <section className="py-28 md:py-36 bg-surface-warm">
+    <div className="container max-w-3xl mx-auto px-6">
+      <ScrollReveal>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">What to expect</p>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-16">Time, Effort & Early Wins</h2>
+      </ScrollReveal>
       <div className="relative">
         <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border" />
-        <div className="grid gap-8">
+        <div className="grid gap-10">
           {milestones.map((m, i) => (
-            <div key={i} className="flex items-start gap-6 pl-0">
-              <div className="w-4 h-4 rounded-full bg-primary mt-1.5 shrink-0 relative z-10" />
-              <div>
-                <span className="text-sm font-bold tracking-wider uppercase text-primary">{m.time}</span>
-                <p className="text-foreground/80 mt-1 font-body text-lg">{m.result}</p>
+            <ScrollReveal key={i} delay={i * 0.06}>
+              <div className="flex items-start gap-6 pl-0">
+                <div className="w-[15px] h-[15px] rounded-full bg-primary mt-1.5 shrink-0 relative z-10" />
+                <div>
+                  <span className="text-xs font-semibold tracking-[0.15em] uppercase text-primary">{m.time}</span>
+                  <p className="text-foreground/80 mt-1.5 text-lg leading-relaxed">{m.result}</p>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

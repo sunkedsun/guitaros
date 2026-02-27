@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 const reasons = [
   {
     title: "30 Minutes a Day",
@@ -18,16 +20,20 @@ const reasons = [
 ];
 
 const WhyItWorks = () => (
-  <section className="py-24 md:py-32 bg-surface-dark text-surface-dark-foreground rounded-3xl mx-4 md:mx-8">
-    <div className="container max-w-4xl mx-auto px-6">
-      <p className="text-sm font-medium tracking-widest uppercase opacity-60 mb-4">The mechanism</p>
-      <h2 className="font-display text-3xl md:text-5xl mb-16">Why Guitar OS Works</h2>
-      <div className="grid md:grid-cols-2 gap-8">
+  <section className="py-28 md:py-36 bg-surface-dark text-surface-dark-foreground">
+    <div className="container max-w-3xl mx-auto px-6">
+      <ScrollReveal>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase opacity-50 mb-4">The mechanism</p>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-16">Why Guitar OS Works</h2>
+      </ScrollReveal>
+      <div className="grid md:grid-cols-2 gap-10">
         {reasons.map((r, i) => (
-          <div key={i} className="border-t border-surface-dark-foreground/10 pt-6">
-            <h3 className="font-display text-xl mb-3">{r.title}</h3>
-            <p className="opacity-70 font-body leading-relaxed">{r.desc}</p>
-          </div>
+          <ScrollReveal key={i} delay={i * 0.08}>
+            <div className="border-t border-surface-dark-foreground/10 pt-6">
+              <h3 className="text-xl font-semibold tracking-tight mb-3">{r.title}</h3>
+              <p className="opacity-60 leading-relaxed">{r.desc}</p>
+            </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>
