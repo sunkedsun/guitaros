@@ -6,7 +6,7 @@ import IntroduceSection from "@/components/landing/IntroduceSection";
 import WhyItWorks from "@/components/landing/WhyItWorks";
 import WhatYouGet from "@/components/landing/WhatYouGet";
 import WhoIsFor from "@/components/landing/WhoIsFor";
-import Timeline from "@/components/landing/Timeline";
+import RealProblemSection from "@/components/landing/RealProblemSection";
 import ValueSection from "@/components/landing/ValueSection";
 import PricingSection from "@/components/landing/PricingSection";
 import Guarantee from "@/components/landing/Guarantee";
@@ -23,7 +23,7 @@ const Index = () => (
     <WhyItWorks />
     <WhatYouGet />
     <WhoIsFor />
-    <Timeline />
+    <RealProblemSection />
     <ValueSection />
     <PricingSection />
     <Guarantee />

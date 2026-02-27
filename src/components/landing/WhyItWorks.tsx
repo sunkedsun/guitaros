@@ -3,19 +3,19 @@ import ScrollReveal from "./ScrollReveal";
 const reasons = [
   {
     title: "30 Minutes a Day",
-    desc: "No more endless hours guessing what to practice. Just 30 focused minutes that fit into your schedule.",
+    desc: "Short, focused sessions remove decision fatigue and make consistency realistic, even on busy days.",
   },
   {
-    title: "Compounding Skill",
-    desc: "Every session builds on the last, giving you faster progress than random practice or single lessons.",
+    title: "Progress That Compounds",
+    desc: "Each session builds on the last, so skills stack instead of random practice or single lessons.",
   },
   {
     title: "Weak Spots Get Addressed",
-    desc: "Fundamentals build without burnout. Structure makes progress compound.",
+    desc: "Rotating focus ensures fundamentals aren’t avoided—gaps close naturally over weeks, not years.",
   },
   {
-    title: "Early Wins",
-    desc: "See tangible progress fast to keep motivation high, while building toward long-term mastery.",
+    title: "Early Wins Built In",
+    desc: "Small, visible improvements early on create momentum and keep motivation high long enough for actual progress.",
   },
 ];
 

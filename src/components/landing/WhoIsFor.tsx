@@ -1,10 +1,10 @@
 import ScrollReveal from "./ScrollReveal";
 
 const forList = [
-  "Guitarists who feel stuck, inconsistent, or unsure what to practice",
-  "Players who want real skill, not just random licks",
+  "Guitarists who feel stuck, inconsistent, or unsure what to practice next",
+  "Players who want to become well-rounded, not just learn licks",
   "Busy people who can commit 30 minutes a day",
-  "Anyone who wants clarity, structure, and measurable progress",
+  "Anyone who wants clarity, structure, and visible progress",
 ];
 
 const notForList = [

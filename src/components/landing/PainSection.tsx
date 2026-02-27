@@ -1,12 +1,12 @@
 import ScrollReveal from "./ScrollReveal";
 
 const pains = [
-  "You sit down to practice and spend 20 minutes just figuring out what to practice",
-  "You've been playing for months (or years) but still hesitate on basic chord changes",
-  "You hop between YouTube videos, never following anything long enough to actually improve",
-  "You start a new routine every few weeks, then drop it after a few days",
-  "You feel like you're practicing, but you're not actually getting better",
-  "You can't improvise, can't jam with friends, can't play a full song clean",
+  "You sit down to practice and spend 20 minutes just figuring out what to work on.",
+  "You’ve been playing for months (or years), but still hesitate on basic chord changes.",
+  "You bounce between YouTube videos and routines without sticking to one long enough to improve.",
+  "You feel overwhelmed by all the scales, chords, and techniques you’re “supposed” to learn.",
+  "You practice when you can, but with limited time, it never feels like actual progress.",
+  "You can’t improvise, can’t jam with friends, and can’t play a full song clean.",
 ];
 
 const PainSection = () => (
@@ -18,7 +18,7 @@ const PainSection = () => (
           "I practice every day.<br />Why am I still stuck?"
         </h2>
         <p className="text-muted-foreground text-lg mb-14 max-w-2xl leading-relaxed">
-          You're putting in time—but you still hesitate on certain chords, avoid weak spots, and aren't sure if you're actually improving.
+          You’re putting in the time. But without a clear roadmap, your practice never compounds.
         </p>
       </ScrollReveal>
       <div className="grid gap-3">
