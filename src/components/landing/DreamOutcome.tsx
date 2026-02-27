@@ -1,10 +1,13 @@
 import ScrollReveal from "./ScrollReveal";
 
 const outcomes = [
-  { time: "1 week", result: "Play your first full song" },
   { time: "3 days", result: "Nail a tricky chord transition" },
+  { time: "1 week", result: "Play your first full song" },
   { time: "1 month", result: "Improvise confidently over any backing track" },
-  { time: "3 months", result: "Build complete fretboard fluency and solid technique" },
+  {
+    time: "3 months",
+    result: "Build complete fretboard fluency and solid technique",
+  },
   { time: "6 months", result: "Become the guitarist you always wanted to be" },
 ];
 
