@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
-const CHECKOUT_URL = "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA";
+const CHECKOUT_URL =
+  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
 
 const Navbar = () => (
   <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-xl border-b border-border/30">

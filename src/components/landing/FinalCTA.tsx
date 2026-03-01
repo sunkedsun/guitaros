@@ -1,7 +1,8 @@
 import { ArrowRight, Check } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
-const CHECKOUT_URL = "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA";
+const CHECKOUT_URL =
+  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
 
 const checks = [
   "Play songs faster",

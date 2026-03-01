@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import heroMockup from "@/assets/GuitarOS Pic.jpg";
 
 const CHECKOUT_URL =
-  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA";
+  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
 
 const Hero = () => (
   <section className="relative overflow-hidden pt-28 pb-20 md:pt-40 md:pb-28 bg-background">
