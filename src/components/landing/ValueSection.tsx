@@ -17,7 +17,7 @@ const rows = [
 ];
 
 const ValueSection = () => (
-  <section className="py-28 md:py-36">
+  <section className="py-24 md:py-32 bg-surface-warm">
     <div className="container max-w-3xl mx-auto px-6">
       <ScrollReveal>
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
@@ -38,24 +38,24 @@ const ValueSection = () => (
       <ScrollReveal delay={0.1}>
         <div className="border border-border rounded-2xl overflow-hidden">
           <div className="grid grid-cols-[1fr_auto]">
-            <div className="px-6 py-4 font-semibold text-xs tracking-[0.15em] uppercase border-b border-border bg-card">
+            <div className="px-5 md:px-6 py-4 font-semibold text-xs tracking-[0.15em] uppercase border-b border-border bg-background">
               What You're Getting
             </div>
-            <div className="px-6 py-4 font-semibold text-xs tracking-[0.15em] uppercase border-b border-border text-right bg-card">
+            <div className="px-5 md:px-6 py-4 font-semibold text-xs tracking-[0.15em] uppercase border-b border-border text-right bg-background">
               Value
             </div>
             {rows.map((r, i) => (
               <div key={i} className="contents">
-                <div className="px-6 py-4 border-b border-border/40 text-[0.9375rem]">
+                <div className="px-5 md:px-6 py-4 border-b border-border/40 text-sm md:text-[0.9375rem]">
                   {r.item}
                 </div>
-                <div className="px-6 py-4 border-b border-border/40 text-right font-semibold text-primary text-[0.9375rem]">
+                <div className="px-5 md:px-6 py-4 border-b border-border/40 text-right font-semibold text-primary text-sm md:text-[0.9375rem]">
                   {r.value}
                 </div>
               </div>
             ))}
-            <div className="px-6 py-4 font-semibold bg-card">Total value</div>
-            <div className="px-6 py-4 text-right font-bold text-primary text-lg bg-card">
+            <div className="px-5 md:px-6 py-4 font-semibold bg-background">Total value</div>
+            <div className="px-5 md:px-6 py-4 text-right font-bold text-primary text-lg bg-background">
               $3,695+
             </div>
           </div>

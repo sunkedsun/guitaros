@@ -6,7 +6,7 @@ const CHECKOUT_URL = "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078A
 const PricingSection = () => (
   <section
     id="pricing"
-    className="py-28 md:py-36 bg-surface-dark text-surface-dark-foreground"
+    className="py-24 md:py-32 bg-surface-dark text-surface-dark-foreground"
   >
     <div className="container max-w-3xl mx-auto px-6 text-center">
       <ScrollReveal>
@@ -39,13 +39,13 @@ const PricingSection = () => (
           </p>
           <a
             href={CHECKOUT_URL}
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 hover:scale-[1.03] transition-all duration-200"
           >
             Get Guitar OS Now
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </a>
           <p className="text-xs opacity-40 mt-6">
-            One purchase. Lifetime access. All sales are final..
+            One purchase. Lifetime access. All sales are final.
           </p>
         </div>
       </ScrollReveal>

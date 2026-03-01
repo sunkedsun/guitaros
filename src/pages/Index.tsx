@@ -1,16 +1,14 @@
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import PainSection from "@/components/landing/PainSection";
-import DreamOutcome from "@/components/landing/DreamOutcome";
+import RealProblemSection from "@/components/landing/RealProblemSection";
 import IntroduceSection from "@/components/landing/IntroduceSection";
+import WhoIsFor from "@/components/landing/WhoIsFor";
 import WhyItWorks from "@/components/landing/WhyItWorks";
 import WhatYouGet from "@/components/landing/WhatYouGet";
-import WhoIsFor from "@/components/landing/WhoIsFor";
-import RealProblemSection from "@/components/landing/RealProblemSection";
+import DreamOutcome from "@/components/landing/DreamOutcome";
 import ValueSection from "@/components/landing/ValueSection";
 import PricingSection from "@/components/landing/PricingSection";
-import Guarantee from "@/components/landing/Guarantee";
-import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => (
@@ -18,16 +16,14 @@ const Index = () => (
     <Navbar />
     <Hero />
     <PainSection />
-    <DreamOutcome />
+    <RealProblemSection />
     <IntroduceSection />
+    <WhoIsFor />
     <WhyItWorks />
     <WhatYouGet />
-    <WhoIsFor />
-    <RealProblemSection />
+    <DreamOutcome />
     <ValueSection />
     <PricingSection />
-    <Guarantee />
-    <FinalCTA />
     <Footer />
   </main>
 );

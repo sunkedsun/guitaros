@@ -28,7 +28,7 @@ const outcomes = [
 ];
 
 const DreamOutcome = () => (
-  <section className="py-28 md:py-36 bg-surface-warm">
+  <section className="py-24 md:py-32 bg-background">
     <div className="container max-w-3xl mx-auto px-6">
       <ScrollReveal>
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
@@ -42,7 +42,7 @@ const DreamOutcome = () => (
         {outcomes.map((o, i) => (
           <ScrollReveal key={i} delay={i * 0.06}>
             <div className="flex items-baseline gap-6">
-              <span className="text-primary font-semibold text-xs tracking-[0.15em] uppercase whitespace-nowrap min-w-[100px]">
+              <span className="text-primary font-semibold text-xs tracking-[0.15em] uppercase whitespace-nowrap min-w-[80px] md:min-w-[100px]">
                 {o.time}
               </span>
               <p className="text-xl md:text-2xl font-medium tracking-tight">
@@ -53,7 +53,7 @@ const DreamOutcome = () => (
         ))}
       </div>
       <ScrollReveal delay={0.3}>
-        <p className="text-muted-foreground mt-16 text-lg max-w-2xl leading-relaxed">
+        <p className="text-muted-foreground mt-14 md:mt-16 text-lg max-w-2xl leading-relaxed">
           Feel calm, confident, and clear every time you pick up
           your guitar. Guitar OS gives you the structure, direction, and daily
           wins that turn scattered practice into mastery.
