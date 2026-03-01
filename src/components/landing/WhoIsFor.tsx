@@ -14,10 +14,10 @@ const notForList = [
 ];
 
 const WhoIsFor = () => (
-  <section className="py-28 md:py-36">
+  <section className="py-24 md:py-32 bg-background">
     <div className="container max-w-3xl mx-auto px-6">
       <ScrollReveal>
-        <div className="mb-20">
+        <div className="mb-16 md:mb-20">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">Perfect fit</p>
           <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-10">
             Who Guitar OS Is For
@@ -25,7 +25,7 @@ const WhoIsFor = () => (
           <div className="space-y-4">
             {forList.map((item, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="text-success font-medium mt-0.5 text-lg shrink-0">✓</span>
+                <span className="text-success font-medium mt-0.5 text-lg shrink-0" aria-hidden="true">✓</span>
                 <p className="text-foreground/80 text-[1.0625rem] leading-relaxed">{item}</p>
               </div>
             ))}
@@ -40,7 +40,7 @@ const WhoIsFor = () => (
           <div className="space-y-4">
             {notForList.map((item, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="text-destructive font-medium mt-0.5 text-lg shrink-0">✕</span>
+                <span className="text-destructive font-medium mt-0.5 text-lg shrink-0" aria-hidden="true">✕</span>
                 <p className="text-foreground/80 text-[1.0625rem] leading-relaxed">{item}</p>
               </div>
             ))}

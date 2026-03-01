@@ -11,7 +11,7 @@ const reasons = [
   },
   {
     title: "Weak Spots Get Addressed",
-    desc: "Rotating focus ensures fundamentals aren’t avoided—gaps close naturally over weeks, not years.",
+    desc: "Rotating focus ensures fundamentals aren't avoided—gaps close naturally over weeks, not years.",
   },
   {
     title: "Early Wins Built In",
@@ -20,11 +20,11 @@ const reasons = [
 ];
 
 const WhyItWorks = () => (
-  <section className="py-28 md:py-36 bg-surface-dark text-surface-dark-foreground">
+  <section className="py-24 md:py-32 bg-surface-dark text-surface-dark-foreground">
     <div className="container max-w-3xl mx-auto px-6">
       <ScrollReveal>
         <p className="text-xs font-semibold tracking-[0.2em] uppercase opacity-50 mb-4">The mechanism</p>
-        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-16">Why Guitar OS Works</h2>
+        <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-14 md:mb-16">Why Guitar OS Works</h2>
       </ScrollReveal>
       <div className="grid md:grid-cols-2 gap-10">
         {reasons.map((r, i) => (

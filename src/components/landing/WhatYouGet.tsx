@@ -19,7 +19,7 @@ const modules = [
   {
     num: "04",
     title: "Improvisation & Creative Play",
-    desc: "Creative playing is introduced early, so you’re not just running drills—you’re making music from the start.",
+    desc: "Creative playing is introduced early, so you're not just running drills—you're making music from the start.",
   },
   {
     num: "05",
@@ -34,7 +34,7 @@ const modules = [
 ];
 
 const WhatYouGet = () => (
-  <section className="py-28 md:py-36">
+  <section className="py-24 md:py-32 bg-surface-warm">
     <div className="container max-w-3xl mx-auto px-6">
       <ScrollReveal>
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
@@ -43,7 +43,7 @@ const WhatYouGet = () => (
         <h2 className="text-3xl md:text-[2.75rem] font-semibold leading-tight tracking-tight mb-4">
           A Notion-based complete practice system. Everything laid out.
         </h2>
-        <p className="text-muted-foreground text-lg mb-16 leading-relaxed">
+        <p className="text-muted-foreground text-lg mb-14 md:mb-16 leading-relaxed">
           No fluff, no filler—just a clear roadmap you follow every day.
         </p>
       </ScrollReveal>
