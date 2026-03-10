@@ -49,7 +49,7 @@ const Hero = () => (
             href={CHECKOUT_URL}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 hover:scale-[1.03] transition-all duration-200 shadow-lg shadow-primary/20"
           >
-            Get Guitar OS — $149
+            Get Guitar OS — $79 
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </a>
           <p className="text-sm text-muted-foreground mt-4 italic">

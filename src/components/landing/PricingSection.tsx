@@ -19,7 +19,7 @@ const PricingSection = () => (
         </h2>
         <p className="opacity-60 text-lg mb-14 max-w-xl mx-auto leading-relaxed">
           Get $3,695+ worth of structured guidance for just{" "}
-          <strong>$149</strong>. Follow a proven 30-minute daily roadmap and
+          <strong>$79</strong>. Follow a proven 30-minute daily roadmap and
           finally achieve progress on guitar—without wasting months guessing
           what to practice.
         </p>
@@ -30,13 +30,13 @@ const PricingSection = () => (
             Early-Bird Price
           </p>
           <div className="flex items-baseline justify-center gap-3 mb-2">
-            <span className="text-2xl opacity-40 line-through">$179</span>
+            <span className="text-2xl opacity-40 line-through">$129</span>
             <span className="text-5xl md:text-6xl font-bold tracking-tight">
-              $149
+              $79
             </span>
           </div>
           <p className="text-sm opacity-50 mb-8">
-            Only 20 spots at this price — act fast!
+            Only 30 spots at this price — act fast!
           </p>
           <a
             href={CHECKOUT_URL}

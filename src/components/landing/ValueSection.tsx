@@ -30,7 +30,7 @@ const ValueSection = () => (
           Most guitarists spend 30–60 minutes/day guessing what to practice.
           Over 12 months, that's ~180 hours. At $50–$75/hour for private
           lessons, that would cost $9,000+. Guitar OS gives you structured
-          guidance, step-by-step, for a fraction of that—plus the freedom to
+          guidance, step-by-step, for the price of 1-2 lessons—plus the freedom to
           practice on your own, see progress daily, and build habits that stick
           for life.
         </p>

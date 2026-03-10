@@ -41,11 +41,11 @@ const FinalCTA = () => (
           href={CHECKOUT_URL}
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 transition-opacity"
         >
-          Get Guitar OS — Early-Bird $149
+          Get Guitar OS — Early-Bird $79
           <ArrowRight className="w-4 h-4" />
         </a>
         <p className="text-sm text-muted-foreground mt-4">
-          Only 20 spots at this price — lifetime access, no subscriptions.
+          Only 30 spots at this price — lifetime access, no subscriptions.
         </p>
       </ScrollReveal>
     </div>
