@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const CHECKOUT_URL =
-  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
+  "https://sunkedsun.kit.com/products/guitar-os?promo=E221399ADA&step=checkout";
 
 const PricingSection = () => (
   <section
@@ -19,7 +19,7 @@ const PricingSection = () => (
         </h2>
         <p className="opacity-60 text-lg mb-14 max-w-xl mx-auto leading-relaxed">
           Get $3,695+ worth of structured guidance for just{" "}
-          <strong>$79</strong>. Follow a proven 30-minute daily roadmap and
+          <strong>$49</strong>. Follow a proven 30-minute daily roadmap and
           finally achieve progress on guitar—without wasting months guessing
           what to practice.
         </p>
@@ -30,9 +30,9 @@ const PricingSection = () => (
             Early-Bird Price
           </p>
           <div className="flex items-baseline justify-center gap-3 mb-2">
-            <span className="text-2xl opacity-40 line-through">$129</span>
+            <span className="text-2xl opacity-40 line-through">$79</span>
             <span className="text-5xl md:text-6xl font-bold tracking-tight">
-              $79
+              $49
             </span>
           </div>
           <p className="text-sm opacity-50 mb-8">

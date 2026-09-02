@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import heroMockup from "@/assets/GuitarOS Pic.jpg";
 
 const CHECKOUT_URL =
-  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
+  "https://sunkedsun.kit.com/products/guitar-os?promo=E221399ADA&step=checkout";
 
 const Hero = () => (
   <section className="relative overflow-hidden pt-28 pb-20 md:pt-40 md:pb-28 bg-background">
@@ -49,7 +49,7 @@ const Hero = () => (
             href={CHECKOUT_URL}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 hover:scale-[1.03] transition-all duration-200 shadow-lg shadow-primary/20"
           >
-            Get Guitar OS — $79 
+            Get Guitar OS — $49
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </a>
           <p className="text-sm text-muted-foreground mt-4 italic">

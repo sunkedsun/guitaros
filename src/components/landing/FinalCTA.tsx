@@ -2,7 +2,7 @@ import { ArrowRight, Check } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const CHECKOUT_URL =
-  "https://sunkedsun.kit.com/products/guitar-os?promo=HBI078ABHA&step=checkout";
+  "https://sunkedsun.kit.com/products/guitar-os?promo=E221399ADA&step=checkout";
 
 const checks = [
   "Play songs faster",
@@ -41,7 +41,7 @@ const FinalCTA = () => (
           href={CHECKOUT_URL}
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 transition-opacity"
         >
-          Get Guitar OS — Early-Bird $79
+          Get Guitar OS — Early-Bird $49
           <ArrowRight className="w-4 h-4" />
         </a>
         <p className="text-sm text-muted-foreground mt-4">
